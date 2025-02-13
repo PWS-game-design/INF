@@ -9,7 +9,10 @@ resy = 1080
 win = pygame.display.set_mode((resx, resy))
 clock = pygame.time.Clock()
 running = True
+dt = 0
 pygame.display.set_caption("Murder Mystery")
+
+player_pos = pygame.Vector2(win.get_width() / 2, win.get_height() / 2)
 
 while running:
 
@@ -22,7 +25,7 @@ while running:
     win.fill("black")
 
     # RENDER GAME HERE
-
+    pygame.draw.circle(win, "green", player_pos, 40)
 
     # flip() the display to put your work on the screen
     pygame.display.flip()
