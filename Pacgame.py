@@ -27,6 +27,31 @@ wall1 = pygame.Vector2(20, 50)
 
 def ghostmovement():
     ghostB_pos
+    
+
+def sidecheckU():
+    if checkU.colliderect(wallhitbox):
+        return True
+    else:
+        return False
+
+def sidecheckD():
+    if checkD.colliderect(wallhitbox):
+        return True
+    else:
+        return False
+    
+def sidecheckL():
+    if checkL.colliderect(wallhitbox):
+        return True
+    else:
+        return False
+    
+def sidecheckR():
+    if checkR.colliderect(wallhitbox):
+        return True
+    else:
+        return False
 
 while running:
 
@@ -35,40 +60,53 @@ while running:
         if event.type == pygame.QUIT:
             running = False
     
-    # fil the screen with a color to wipe away anytinh from the last frame
+    # fil the screen with a color to wipe away anyting from the last frame
     win.fill("black")
 
     # hitboxes
     pachitbox = pygame.Rect(pac_pos.x -20, pac_pos.y - 20, 40, 40)
     wallhitbox = pygame.Rect(250, 50, 2000, 50)
-    sidecheckU = pygame.Rect(pac_pos.x, pac_pos.y - 20, 1, 1)
-    sidecheckD = pygame.Rect(pac_pos.x, pac_pos.y + 20, 1, 1)
-    sidecheckL = pygame.Rect(pac_pos.x - 20, pac_pos.y, 1, 1)
-    sidecheckR = pygame.Rect(pac_pos.x + 20, pac_pos.y, 1, 1)
+    checkU = pygame.Rect(pac_pos.x -15, pac_pos.y - 20, 30, 1)
+    checkD = pygame.Rect(pac_pos.x -15, pac_pos.y + 20, 30, 1)
+    checkL = pygame.Rect(pac_pos.x - 20, pac_pos.y - 15, 1, 30)
+    checkR = pygame.Rect(pac_pos.x + 20, pac_pos.y - 15, 1, 30)
 
 
 
 
     # RENDER GAME HERE
     pygame.draw.circle(win, "yellow", pac_pos, 20)
+
     pygame.draw.circle(win, "blue", ghostB_pos, 10)
     pygame.draw.circle(win, "green", ghostG_pos, 10)
     pygame.draw.circle(win, "orange", ghostO_pos, 10)
     pygame.draw.circle(win, "red", ghostR_pos, 10)
     
-    pygame.draw.rect(win, "blue", (250, 50, 2000, 50))
-                                    # x, y, with, height
+    pygame.draw.rect(win, "blue", (460, 100, 1000, 20))
+                                    # x, y, with, height tot. is 1920, 1060
                                     # linksboven is (0,0)
+    pygame.draw.rect(win, "blue", (460, 960, 1000, 20))
+    pygame.draw.rect(win, "blue", (460, 100, 20, 860))
+    pygame.draw.rect(win, "blue", (1460, 100, 20, 880))
+    pygame.draw.rect(win, "blue", (530, 170, 200, 20))
+    pygame.draw.rect(win, "blue", (780, 170, 130, 20))
+    pygame.draw.rect(win, "blue", (1030, 170, 130, 20))
+    pygame.draw.rect(win, "blue", (960, 100, 20, 200))
+    pygame.draw.rect(win, "blue", (1210, 170, 200, 20))
+    pygame.draw.rect(win, "blue", (530, 170, 20, 200))
+    pygame.draw.rect(win, "blue", (1390, 170, 20, 200))
+    pygame.draw.rect(win, "blue", (530, 890, 200, 20))
+    pygame.draw.rect(win, "blue", (530, 690, 20, 200))
 
     keys = pygame.key.get_pressed()
 
-    if keys[pygame.K_w] and sidecheckU.colliderect(wallhitbox) == False:
+    if keys[pygame.K_w] and sidecheckU() == False:
         pac_pos.y -= 300 * dt
-    if keys[pygame.K_s] and sidecheckD.colliderect(wallhitbox) == False:
+    if keys[pygame.K_s] and sidecheckD() == False:
         pac_pos.y += 300 * dt
-    if keys[pygame.K_a] and sidecheckL.colliderect(wallhitbox) == False:
+    if keys[pygame.K_a] and sidecheckL() == False:
         pac_pos.x -= 300 * dt
-    if keys[pygame.K_d] and sidecheckR.colliderect(wallhitbox) == False:
+    if keys[pygame.K_d] and sidecheckR() == False:
         pac_pos.x += 300 * dt
 
 
