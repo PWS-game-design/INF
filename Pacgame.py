@@ -16,11 +16,11 @@ dt = 0
 
 
 pygame.display.set_caption("Pacman")
-pac_pos = pygame.Vector2(win.get_width() / 5, win.get_height() / 5)
-ghostB_pos = pygame.Vector2(win.get_width() / 1.5, win.get_height() / 1.5)
-ghostG_pos = pygame.Vector2(win.get_width() / 2, win.get_height() / 2)
-ghostO_pos = pygame.Vector2(win.get_width() / 2.5, win.get_height() / 2.5)
-ghostR_pos = pygame.Vector2(win.get_width() / 3, win.get_height() / 3)
+pac_pos = pygame.Vector2(505, 145)
+ghostB_pos = pygame.Vector2(970, 435)
+ghostG_pos = pygame.Vector2(970, 505)
+ghostO_pos = pygame.Vector2(970, 575)
+ghostR_pos = pygame.Vector2(970, 645)
 
 
 def ghostmovement():
@@ -116,7 +116,7 @@ while running:
 
     # hitboxes
     pachitbox = pygame.Rect(pac_pos.x -20, pac_pos.y - 20, 40, 40)
-    wallhitbox = pygame.Rect(250, 50, 2000, 50)
+    wallhitbox = pygame.Rect(460, 100, 1000, 20)
     checkU = pygame.Rect(pac_pos.x -15, pac_pos.y - 20, 30, 1)
     checkD = pygame.Rect(pac_pos.x -15, pac_pos.y + 20, 30, 1)
     checkL = pygame.Rect(pac_pos.x - 20, pac_pos.y - 15, 1, 30)
@@ -158,12 +158,12 @@ while running:
     pygame.draw.rect(win, "blue", (740, 240, 20, 200))
     pygame.draw.rect(win, "blue", (1180, 240, 20, 200))
     pygame.draw.rect(win, "blue", (810, 310, 320, 20))
-    pygame.draw.rect(win, "blue", (890, 380, 170, 20))
+    pygame.draw.rect(win, "blue", (890, 380, 170, 20)) #bovenzijde
     pygame.draw.rect(win, "blue", (810, 310, 20, 200))
     pygame.draw.rect(win, "blue", (880, 380, 20, 320))
     pygame.draw.rect(win, "blue", (1040, 380, 20, 115))
     pygame.draw.rect(win, "blue", (1040, 565, 20, 135))
-    pygame.draw.rect(win, "blue", (890, 680, 170, 20))
+    pygame.draw.rect(win, "blue", (890, 680, 170, 20)) # onderzijde
     pygame.draw.rect(win, "blue", (1110, 310, 20, 200))
     pygame.draw.rect(win, "blue", (600, 310, 90, 20))
     pygame.draw.rect(win, "blue", (1250, 310, 90, 20))
