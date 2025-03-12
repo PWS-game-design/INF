@@ -1,4 +1,3 @@
-
 import pygame
 import random as r
 import time
@@ -23,7 +22,6 @@ ghostG_pos = pygame.Vector2(win.get_width() / 2, win.get_height() / 2)
 ghostO_pos = pygame.Vector2(win.get_width() / 2.5, win.get_height() / 2.5)
 ghostR_pos = pygame.Vector2(win.get_width() / 3, win.get_height() / 3)
 
-wall1 = pygame.Vector2(20, 50)
 
 def ghostmovement():
     ghostB_pos
@@ -52,6 +50,59 @@ def sidecheckR():
         return True
     else:
         return False
+    
+wall01 = pygame.Rect(460, 960, 1000, 20)
+wall02 = pygame.Rect(460, 100, 20, 860)
+wall03 = pygame.Rect(1460, 100, 20, 880)
+wall04 = pygame.Rect(530, 170, 200, 20)
+wall05 = pygame.Rect(780, 170, 130, 20)
+wall06 = pygame.Rect(1030, 170, 130, 20)
+wall07 = pygame.Rect(960, 100, 20, 220)
+wall08 = pygame.Rect(1210, 170, 200, 20)
+wall09 = pygame.Rect(530, 170, 20, 200)
+wall10 = pygame.Rect(1390, 170, 20, 200)
+wall11 = pygame.Rect(530, 890, 200, 20)
+wall12 = pygame.Rect(530, 690, 20, 200)
+wall13 = pygame.Rect(780, 890, 130, 20)
+wall14 = pygame.Rect(1030, 890, 130, 20)
+wall15 = pygame.Rect(960, 750, 20, 220)
+wall16 = pygame.Rect(1390, 690, 20, 200)
+wall17 = pygame.Rect(1210, 890, 200, 20)
+wall18 = pygame.Rect(600, 240, 310, 20)
+wall19 = pygame.Rect(1030, 240, 310, 20)
+wall20 = pygame.Rect(740, 240, 20, 200)
+wall21 = pygame.Rect(1180, 240, 20, 200)
+wall22 = pygame.Rect(1180, 240, 20, 200)
+wall23 = pygame.Rect(810, 310, 320, 20)
+wall24 = pygame.Rect(890, 380, 170, 20)
+wall25 = pygame.Rect(810, 310, 20, 200)
+wall26 = pygame.Rect(880, 380, 20, 320)
+wall27 = pygame.Rect(1040, 380, 20, 115)
+wall28 = pygame.Rect(1040, 565, 20, 135)
+wall29 = pygame.Rect(890, 680, 170, 20)
+wall30 = pygame.Rect(1110, 310, 20, 200)
+wall31 = pygame.Rect(600, 310, 90, 20)
+wall32 = pygame.Rect(1250, 310, 90, 20)
+wall33 = pygame.Rect(600, 310, 20, 200)
+wall34 = pygame.Rect(670, 380, 20, 310)
+wall35 = pygame.Rect(600, 560, 20, 200)
+wall36 = pygame.Rect(600, 820, 310, 20)
+wall37 = pygame.Rect(530, 430, 20, 200)
+wall38 = pygame.Rect(1390, 430, 20, 200)
+wall39 = pygame.Rect(1250, 380, 20, 310)
+wall40 = pygame.Rect(1320, 310, 20, 200)
+wall41 = pygame.Rect(1320, 560, 20, 200)
+wall42 = pygame.Rect(600, 750, 90, 20)
+wall43 = pygame.Rect(1250, 750, 90, 20)
+wall44 = pygame.Rect(810, 750, 320, 20)
+wall45 = pygame.Rect(740, 620, 20, 200)
+wall46 = pygame.Rect(1180, 620, 20, 20)
+wall47 = pygame.Rect(600, 820, 200, 20)
+wall48 = pygame.Rect (1030, 820, 310, 20)
+wall49 = pygame.Rect(1110, 560, 20, 200)
+wall50 = pygame.Rect(810, 560, 20, 200)
+wall51 = pygame.Rect(740, 490, 20, 80)
+wall52 = pygame.Rect(1180, 490, 20, 80)
 
 while running:
 
@@ -136,6 +187,7 @@ while running:
     pygame.draw.rect(win, "blue", (810, 560, 20, 200))
     pygame.draw.rect(win, "blue", (740, 490, 20, 80))
     pygame.draw.rect(win, "blue", (1180, 490, 20, 80))
+
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_w] and sidecheckU() == False:
