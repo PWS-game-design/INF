@@ -14,6 +14,9 @@ clock = pygame.time.Clock()
 running = True
 dt = 0
 
+# sprites
+PAC = pygame.image.load("Untitled382.png").convert_alpha()
+ghostB = pygame.image.load("Untitled383.png").convert_alpha()
 
 pygame.display.set_caption("Pacman")
 pac_pos = pygame.Vector2(505, 145)
@@ -116,17 +119,19 @@ while running:
     # hitboxes
     pachitbox = pygame.Rect(pac_pos.x -20, pac_pos.y - 20, 40, 40)
     wallhitbox = pygame.Rect(460, 100, 1000, 20)
-    checkU = pygame.Rect(pac_pos.x -15, pac_pos.y - 20, 30, 1) 
-    checkD = pygame.Rect(pac_pos.x -15, pac_pos.y + 20, 30, 1)
-    checkL = pygame.Rect(pac_pos.x - 20, pac_pos.y - 15, 1, 30)
-    checkR = pygame.Rect(pac_pos.x + 20, pac_pos.y - 15, 1, 30)
+    checkU = pygame.Rect(pac_pos.x - 18, pac_pos.y - 22, 36, 1) 
+    checkD = pygame.Rect(pac_pos.x - 18, pac_pos.y + 21, 36, 1)
+    checkL = pygame.Rect(pac_pos.x - 22, pac_pos.y - 18, 1, 36)
+    checkR = pygame.Rect(pac_pos.x + 21, pac_pos.y - 18, 1, 36)
 
 
 
 
     # RENDER GAME HERE
     pygame.draw.circle(win, "yellow", pac_pos, 20)
+    win.blit(PAC, (pac_pos.x - 20, pac_pos.y - 20))
 
+    win.blit(ghostB, (ghostB_pos.x - 20, ghostB_pos.y - 20))
     pygame.draw.circle(win, "blue", ghostB_pos, 10)
     pygame.draw.circle(win, "green", ghostG_pos, 10)
     pygame.draw.circle(win, "orange", ghostO_pos, 10)
@@ -186,6 +191,7 @@ while running:
     pygame.draw.rect(win, "blue", (810, 560, 20, 200)) # 49
     pygame.draw.rect(win, "blue", (740, 490, 20, 80)) # 50
     pygame.draw.rect(win, "blue", (1180, 490, 20, 80)) # 51
+    
     pygame.draw.rect(win, "green", (500, 400, 10, 10)) #hp
     pygame.draw.rect(win, "orange", (535, 400, 10, 10))
     pygame.draw.rect(win, "green", (570, 400, 10, 10)) #hp
