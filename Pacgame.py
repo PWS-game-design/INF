@@ -13,10 +13,14 @@ win = pygame.display.set_mode((resx, resy))
 clock = pygame.time.Clock()
 running = True
 dt = 0
-
+flip = False
+flip2 = False
 # sprites
-PAC = pygame.image.load("Untitled382.png").convert_alpha()
+img = pygame.image.load("Untitled382.png").convert_alpha()
+img2 = pygame.image.load("Untitled382flip.png").convert_alpha()
 ghostB = pygame.image.load("Untitled383.png").convert_alpha()
+
+img_copy = img.copy()
 
 pygame.display.set_caption("Pacman")
 pac_pos = pygame.Vector2(505, 145)
@@ -119,12 +123,15 @@ while running:
     # hitboxes
     pachitbox = pygame.Rect(pac_pos.x -20, pac_pos.y - 20, 40, 40)
     wallhitbox = pygame.Rect(460, 100, 1000, 20)
-    checkU = pygame.Rect(pac_pos.x - 18, pac_pos.y - 22, 36, 1) 
-    checkD = pygame.Rect(pac_pos.x - 18, pac_pos.y + 21, 36, 1)
-    checkL = pygame.Rect(pac_pos.x - 22, pac_pos.y - 18, 1, 36)
-    checkR = pygame.Rect(pac_pos.x + 21, pac_pos.y - 18, 1, 36)
+    checkU = pygame.Rect(pac_pos.x - 17, pac_pos.y - 22, 34, 1) 
+    checkD = pygame.Rect(pac_pos.x - 17, pac_pos.y + 21, 34, 1)
+    checkL = pygame.Rect(pac_pos.x - 22, pac_pos.y - 17, 1, 34)
+    checkR = pygame.Rect(pac_pos.x + 21, pac_pos.y - 17, 1, 34)
 
 
+    
+
+    PAC = pygame.transform.flip(img_copy, flip, flip2)
 
 
     # RENDER GAME HERE
@@ -378,12 +385,22 @@ while running:
 
     if keys[pygame.K_w] and sidecheckU() == False:
         pac_pos.y -= 300 * dt
+        img_copy = img2.copy()
+        flip2 = True
     if keys[pygame.K_s] and sidecheckD() == False:
         pac_pos.y += 300 * dt
+        flip2 = False
+        img_copy = img2.copy()
     if keys[pygame.K_a] and sidecheckL() == False:
         pac_pos.x -= 300 * dt
+        flip = True
+        flip2 = False
+        img_copy = img.copy()
     if keys[pygame.K_d] and sidecheckR() == False:
         pac_pos.x += 300 * dt
+        flip = False
+        flip2 = False
+        img_copy = img.copy()
 
 
 
