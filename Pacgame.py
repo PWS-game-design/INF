@@ -472,6 +472,7 @@ while running:
     pygame.draw.rect(win, "orange", (1290, 455, 10, 10))
     pygame.draw.rect(win, "orange", (1290, 490, 10, 10))
     pygame.draw.rect(win, "green", (1290, 525, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (1325, 525, 10, 10))
     pygame.draw.rect(win, "orange", (1290, 560, 10, 10))
     pygame.draw.rect(win, "orange", (1290, 595, 10, 10))
     pygame.draw.rect(win, "orange", (1290, 630, 10, 10))
