@@ -296,7 +296,7 @@ while running:
     pygame.draw.rect(win, "orange", (890, 140, 10, 10))
     pygame.draw.rect(win, "orange", (930, 140, 10, 10))
     pygame.draw.rect(win, "orange", (750, 140, 10, 10))
-    pygame.draw.rect(win, "orange", (1000, 140, 10, 10))
+    pygame.draw.rect(win, "green", (1000, 140, 10, 10))#hp
     pygame.draw.rect(win, "orange", (1035, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1070, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1105, 140, 10, 10))
@@ -314,6 +314,67 @@ while running:
     pygame.draw.rect(win, "orange", (1000, 175, 10, 10))
     pygame.draw.rect(win, "orange", (1000, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1000, 245, 10, 10))
+    pygame.draw.rect(win, "orange", (1035, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (1070, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (1105, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (825, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (860, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (895, 280, 10, 10))
+    pygame.draw.rect(win, "green", (930, 280, 10, 10))#hp
+    pygame.draw.rect(win, "green", (570, 280, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (605, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (675, 280, 10, 10))
+    pygame.draw.rect(win, "green", (710, 280, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (710, 315, 10, 10))
+    pygame.draw.rect(win, "green", (710, 350, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (710, 385, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 420, 10, 10))
+    pygame.draw.rect(win, "green", (710, 455, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (745, 455, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 490, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 525, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 560, 10, 10))
+    pygame.draw.rect(win, "green", (710, 595, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (745, 595, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 630, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 665, 10, 10))
+    pygame.draw.rect(win, "green", (710, 715, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (675, 715, 10, 10))
+    pygame.draw.rect(win, "green", (640, 715, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (640, 680, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 645, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 610, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 575, 10, 10))
+    pygame.draw.rect(win, "green", (640, 540, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (605, 540, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 500, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 460, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 425, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 390, 10, 10))
+    pygame.draw.rect(win, "green", (640, 350, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (675, 350, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 750, 10, 10))
+    pygame.draw.rect(win, "green", (710, 790, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (675, 790, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 790, 10, 10))
+    pygame.draw.rect(win, "orange", (605, 790, 10, 10))
+    pygame.draw.rect(win, "orange", (570, 315, 10, 10))
+    pygame.draw.rect(win, "orange", (570, 350, 10, 10))
+    pygame.draw.rect(win, "orange", (570, 245, 10, 10))
+    pygame.draw.rect(win, "green", (570, 210, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (605, 210, 10, 10))
+    pygame.draw.rect(win, "orange", (640, 210, 10, 10))
+    pygame.draw.rect(win, "orange", (675, 210, 10, 10))
+    pygame.draw.rect(win, "orange", (710, 210, 10, 10))
+    pygame.draw.rect(win, "green", (750, 210, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (815, 210, 10, 10))
+    pygame.draw.rect(win, "orange", (850, 210, 10, 10))
+    pygame.draw.rect(win, "orange", (885, 210, 10, 10))
+    pygame.draw.rect(win, "green", (930, 210, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (930, 175, 10, 10))
+    pygame.draw.rect(win, "orange", (930, 245, 10, 10))
+    pygame.draw.rect(win, "orange", (750, 175, 10, 10))
     pygame.draw.rect(win, "orange", (1000, 280, 10, 10))
     pygame.draw.rect(win, "orange", (1035, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1070, 210, 10, 10))
