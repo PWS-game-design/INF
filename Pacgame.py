@@ -43,7 +43,7 @@ def sidecheckL():
     if checkL.colliderect(wallhitbox) or checkL.colliderect(wall01) or checkL.colliderect(wall02) or checkL.colliderect(wall03) or checkL.colliderect(wall04 ) or checkL.colliderect(wall05) or checkL.colliderect(wall06) or checkL.colliderect(wall07) or checkL.colliderect(wall08) or checkL.colliderect(wall09) or checkL.colliderect(wall10) or checkL.colliderect(wall11) or checkL.colliderect(wall12) or checkL.colliderect(wall13) or checkL.colliderect(wall14) or checkL.colliderect(wall15) or checkL.colliderect(wall16) or checkL.colliderect(wall17) or checkL.colliderect(wall18) or checkL.colliderect(wall19) or checkL.colliderect(wall20) or checkL.colliderect(wall21) or checkL.colliderect(wall22) or checkL.colliderect(wall23) or checkL.colliderect(wall24) or checkL.colliderect(wall25) or checkL.colliderect(wall26) or checkL.colliderect(wall27) or checkL.colliderect(wall28) or checkL.colliderect(wall29) or checkL.colliderect(wall30) or checkL.colliderect(wall31) or checkL.colliderect(wall32) or checkL.colliderect(wall33) or checkL.colliderect(wall34) or checkL.colliderect(wall35) or checkL.colliderect(wall36) or checkL.colliderect(wall37) or checkL.colliderect(wall38) or checkL.colliderect(wall39) or checkL.colliderect(wall40) or checkL.colliderect(wall41) or checkL.colliderect(wall42) or checkL.colliderect(wall43) or checkL.colliderect(wall44) or checkL.colliderect(wall45) or checkL.colliderect(wall46) or checkL.colliderect(wall47) or checkL.colliderect(wall48) or checkL.colliderect(wall49) or checkL.colliderect(wall50) or checkL.colliderect(wall51):
         return True
     else:
-        return False
+       return False
     
 def sidecheckR():
     if checkR.colliderect(wallhitbox) or checkR.colliderect(wall01) or checkR.colliderect(wall02) or checkR.colliderect(wall03) or checkR.colliderect(wall04 ) or checkR.colliderect(wall05) or checkR.colliderect(wall06) or checkR.colliderect(wall07) or checkR.colliderect(wall08) or checkR.colliderect(wall09) or checkR.colliderect(wall10) or checkR.colliderect(wall11) or checkR.colliderect(wall12) or checkR.colliderect(wall13) or checkR.colliderect(wall14) or checkR.colliderect(wall15) or checkR.colliderect(wall16) or checkR.colliderect(wall17) or checkR.colliderect(wall18) or checkR.colliderect(wall19) or checkR.colliderect(wall20) or checkR.colliderect(wall21) or checkR.colliderect(wall22) or checkR.colliderect(wall23) or checkR.colliderect(wall24) or checkR.colliderect(wall25) or checkR.colliderect(wall26) or checkR.colliderect(wall27) or checkR.colliderect(wall28) or checkR.colliderect(wall29) or checkR.colliderect(wall30) or checkR.colliderect(wall31) or checkR.colliderect(wall32) or checkR.colliderect(wall33) or checkR.colliderect(wall34) or checkR.colliderect(wall35) or checkR.colliderect(wall36) or checkR.colliderect(wall37) or checkR.colliderect(wall38) or checkR.colliderect(wall39) or checkR.colliderect(wall40) or checkR.colliderect(wall41) or checkR.colliderect(wall42) or checkR.colliderect(wall43) or checkR.colliderect(wall44) or checkR.colliderect(wall45) or checkR.colliderect(wall46) or checkR.colliderect(wall47) or checkR.colliderect(wall48) or checkR.colliderect(wall49) or checkR.colliderect(wall50) or checkR.colliderect(wall51):
@@ -283,12 +283,12 @@ while running:
     pygame.draw.rect(win, "orange", (890, 140, 10, 10))
     pygame.draw.rect(win, "orange", (930, 140, 10, 10))
     pygame.draw.rect(win, "orange", (750, 140, 10, 10))
-    pygame.draw.rect(win, "orange", (1000, 140, 10, 10))
+    pygame.draw.rect(win, "green", (1000, 140, 10, 10))#hp
     pygame.draw.rect(win, "orange", (1035, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1070, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1105, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1140, 140, 10, 10))
-    pygame.draw.rect(win, "orange", (1180, 140, 10, 10))
+    pygame.draw.rect(win, "green", (1180, 140, 10, 10))#hp
     pygame.draw.rect(win, "orange", (1210, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1245, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1280, 140, 10, 10))
@@ -297,14 +297,21 @@ while running:
     pygame.draw.rect(win, "orange", (1385, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1430, 140, 10, 10))
     pygame.draw.rect(win, "orange", (1180, 175, 10, 10))
-    pygame.draw.rect(win, "orange", (1180, 210, 10, 10))
+    pygame.draw.rect(win, "green", (1180, 210, 10, 10))#hp
     pygame.draw.rect(win, "orange", (1000, 175, 10, 10))
-    pygame.draw.rect(win, "orange", (1000, 210, 10, 10))
+    pygame.draw.rect(win, "green", (1000, 210, 10, 10))#hp
     pygame.draw.rect(win, "orange", (1000, 245, 10, 10))
-    pygame.draw.rect(win, "orange", (1000, 280, 10, 10))
+    pygame.draw.rect(win, "green", (1000, 280, 10, 10))#hp
     pygame.draw.rect(win, "orange", (1035, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1070, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1105, 210, 10, 10))
+    pygame.draw.rect(win, "orange", (1035, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (1070, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (1105, 280, 10, 10))
+    pygame.draw.rect(win, "green", (1220, 280, 10, 10))#hp
+    pygame.draw.rect(win, "orange", (1250, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (1285, 280, 10, 10))
+    pygame.draw.rect(win, "orange", (1320, 280, 10, 10))
     pygame.draw.rect(win, "orange", (1210, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1245, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1280, 210, 10, 10))
@@ -315,6 +322,13 @@ while running:
     pygame.draw.rect(win, "orange", (1430, 365, 10, 10))
     pygame.draw.rect(win, "orange", (1430, 295, 10, 10))
     pygame.draw.rect(win, "orange", (1430, 265, 10, 10))
+<<<<<<< Updated upstream
+=======
+    pygame.draw.rect(win, "orange", (1430, 325, 10, 10))
+    pygame.draw.rect(win, "green", (1430, 395, 10, 10))
+    pygame.draw.rect(win, "orange", (1395, 395, 10, 10))
+    pygame.draw.rect(win, "green", (1360, 395, 10, 10))#hp
+>>>>>>> Stashed changes
     pygame.draw.rect(win, "orange", (1430, 235, 10, 10))
     pygame.draw.rect(win, "orange", (1430, 210, 10, 10))
     pygame.draw.rect(win, "orange", (1430, 435, 10, 10))
