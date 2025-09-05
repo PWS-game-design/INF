@@ -15,6 +15,8 @@ running = True
 dt = 0
 flip = False
 flip2 = False
+
+x = 0
 # sprites
 yippee1 = pygame.image.load("frame_00_delay-0.1s.png").convert_alpha()
 yippee2 = pygame.image.load("frame_01_delay-0.1s.png").convert_alpha()
@@ -1553,8 +1555,10 @@ while running:
             # dt is delta time in seconds since last frame, used for framerate
             dt = clock.tick(60) / 1000
 
-            
-        
+        x += 1
+    
+    if x == 5:
+        running = False
     # flip() the display to put your work on the screen
     pygame.display.flip()
 
@@ -1565,4 +1569,3 @@ while running:
     dt = clock.tick(60) / 1000
 
 pygame.quit()
-
